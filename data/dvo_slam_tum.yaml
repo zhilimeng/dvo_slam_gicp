@@ -1,0 +1,42 @@
+%YAML:1.0
+---
+BenchmarkConfig:
+   data_folder: "D:/Data/slam_data/rgbd_dataset_freiburg1_desk2"
+   assoc_file: "assoc.txt"
+   trajectory_file: "final_poses.txt"
+CameraConfig:
+    fx: 517.5
+    fy: 516.5
+    cx: 318.6
+    cy: 255.5
+    scale: 5000
+    width: 640
+    height: 480
+KeyframeTrackerConfig:
+    average_spacing: 0.01
+    frame_sample_num: 3000
+    min_keyframe_overlap: 0.75
+    max_localmap_frames: 10
+    tracking_mode: 1
+    # 0 texture 1 geometry
+    group_keyframe_size: 6
+    group_sample_num: 5000
+    min_group_overlap: 0.15
+    search_radius: 0.5
+    
+    #tracking
+    max_keypoints_num: 1000
+    knn: 3
+    max_iterations: 20
+    min_valid_matches: 6
+    max_descriptor_ratio: 0.35
+    max_keypoint_2d_dist: 260
+    min_keypoint_pair3d_dist: 0.015
+    max_keypoint_pair3d_dev_dist: 0.003
+    
+    first_level: 0
+    last_level: 0
+    dense_precision: 0.0000001
+    mu: 0.0
+    icp_precision: 0.0000001
+    max_angle: 60.0

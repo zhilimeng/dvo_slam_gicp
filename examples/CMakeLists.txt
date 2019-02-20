@@ -1,0 +1,3 @@
+add_subdirectory(registration)
+add_subdirectory(slam)
+add_subdirectory(surface)
