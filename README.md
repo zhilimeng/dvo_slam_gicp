@@ -1,4 +1,5 @@
 # dvo_slam using gicp optimization
+ this code is modifed from [dvo_slam](https://github.com//tum-vision/dvo_slam)
 
 ### ThirdParty
 - **opencv 3**   
